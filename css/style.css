@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    min-width: 400px;
+
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    min-width: 400px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    top: 0;
+    font-size: 2vh;
+    background-color: black;
+    z-index: 10;
+    min-width: 400px;
+}
+
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+main{
+    margin-top: 5vh;
+}
+
+.anchor{
+    position: relative;
+    bottom: 10vh;
+}
+
+#banner{
+    background: no-repeat center center url("https://img.freepik.com/free-vector/abstract-business-professional-background-banner-design-multipurpose_1340-16858.jpg?w=1800&t=st=1674093387~exp=1674093987~hmac=02edf759ebbea0b91600286763ee016a05ff7e2f38d5e8b3a48027e88f407b19");
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 92vh;
+}
+
+#banner div{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+}
+
+#banner h1{
+    font-family: 'Orbitron', sans-serif;
+}
+
+#banner b{
+    font-size: 10vh;
+    margin-left: 1vh;
+    color: rgb(0, 0, 0, 1);
+    animation: flicker 0.8s linear infinite;
+}
+
+#aboutMe{
+    background-color: black;
+    height: 92vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border: whitesmoke solid 1vh;
+    border-radius: 1vh;
+    margin: 2vh;
+    box-shadow: 0px 0px 22px 0px rgba(255,255,255,0.75) inset;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(255,255,255,0.75) inset;
+    -moz-box-shadow: 0px 0px 22px 0px rgba(255,255,255,0.75) inset;
+    box-shadow: 0px 0px 22px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(255,255,255,0.75);
+    box-shadow: 5vh;
+}
+
+#aboutMe div{
+    display: flex;
+}
+
+#aboutMe div:first-of-type{
+    display: grid;
+}
+
+#aboutMe h3{
+    text-align: center;
+    width: 66%;
+    font-size: 2vh;
+    justify-self: center;
+}
+
+#aboutMe div>div{
+    border-radius: 1vh;
+    margin: 2vh;
+    padding: 1vh;
+    display: grid;
+    justify-content: center;
+    border: whitesmoke dashed 0.5vh;
+    text-align: center;
+}
+
+#aboutMe img{
+    display: none;
+}
+
+h2{
+    font-size: 3vh;
+    text-align: center;
+    margin: auto;
+}
+
+h3{
+    font-size: 5vh;
+    margin: auto;
+    text-shadow: 0vh 0vh 5vh whitesmoke;
+}
+
+p{
+    font-size: 2vh;
+    text-shadow: 0vh 0vh 5vh whitesmoke;
+}
+
+#restSpace{
+    display: flex;
+    background: no-repeat center center fixed url("https://i.pinimg.com/736x/b9/f3/6d/b9f36d902c78d57a28916c608c341ad3.jpg");
+    background-size: cover;
+    height: 92vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#somethingElse{
+    margin: 20vh 0;
+    height: 92vh;
+    width: 100%;
+    color: whitesmoke;
+    display: grid;
+    align-items: center;
+}
+
+#somethingElse p {
+    margin: 10vh 0;
+    width: 75%;
+    justify-self: center;
+    text-align: center;
+    font-size: 3vh;
+}
+
+#somethingElse p:first-of-type{
+    margin-top: -5vh;
+}
+
+
+footer{
+    width: 100%;
+    display: grid;
+    background: linear-gradient(0deg, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%, rgba(30,30,30,1) 100%);
+    border-top: white dotted 1vh;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+footer h2{
+    font-size: 8vh;
+    margin-top: 5vh;
+}
+
+footer img {
+    width: 10vh;
+    border-radius: 1vh;
+    margin: 5vh 1vh;
+}
+
+@media (min-width: 720px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .anchor{
+        bottom: 5vh;
+    }
+    #aboutMeAnchor{
+        bottom: -82vh;
+    }
+    #somethingElseAnchor{
+        bottom: -82vh;
+    }
+    #aboutMe{
+        display: grid;
+        background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0, 1) 25%, rgb(0, 0, 0, 0) 50%, rgb(0, 0, 0, 0) 100%),  no-repeat top right url("../img/geek.jpg");
+        background-size: cover;
+    }
+    .desktop{
+        width: 50%;
+        min-width: 100vh;
+        justify-self: baseline;
+    }
+    #aboutMe h2{
+        font-size: 8vh;
+    }    
+    #aboutMe h3{
+        font-size: 3vh;
+    }
+    #aboutMe p{
+        font-size: 3vh;
+    }
+    #somethingElse{
+
+    }
+    #restSpace{
+
+    }
+}
+
+
+
+
+
+
+@keyframes flicker{
+    0%{
+        color: rgb(0, 0, 0, 1);
+    }
+    50%{
+        color: rgb(0, 0, 0, 0);
+    }
+    100%{
+        color: rgb(0, 0, 0, 1);
+    }
+}
+
+@keyframes change {
+    0%{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    25%{
+        background-color: rgba(255, 0, 255, 0.2);
+    }
+    50%{
+        background-color: rgba(0, 255, 255, 0.2);
+    }
+    75%{
+        background-color: rgba(255, 255, 0, 0.2);
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
